@@ -3,8 +3,8 @@
 
 ### Integrantes do grupo:
 
-* Aluno 1
-* Aluno 2
-* Aluno 3
-* Aluno 4
-* Aluno 5
+* Filippi Luigi Di Pipi 31438938  
+* Lucas Porfirio 31637671
+* Matheus Correia Lira da Silva 31433138
+* Victor Pereira
+
