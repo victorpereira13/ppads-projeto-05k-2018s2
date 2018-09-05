@@ -8,15 +8,21 @@
   
   Fluxo alternativo 1: Caso o funcionário não preencha as informações obrigatórias (nome, descrição, estimativa, departamento, e resultados esperados) o sistema exibe uma mensagem de que não foi possivel cadastrar o projeto.
   
-  Fluxo alternativo 2: Atribuir tarefas aos colaboradores do projeto.
+  Fluxo alternativo 2: Atribuir tarefas aos colaboradores do projeto. Caso o usuário atribuido a uma tarefa ainda não esteja cadastrado no sitema uma mensagem de erro é exibida informando que o usuário não está cadastrado no sistema e que não foi possível realizar a atribuição.
   
+    
 ## CDU002
   Comentar um projeto
   
 ### Fluxo principal: comentar o comentário de outros funcionario para agregar mais ideias ao projeto.
 
 ## CDU003
-
-  Implementar o projeto
-### Fluxo principal: Após a criação do projeto, e todas as caracteristicas definidas, implementá-lo.
+  Submeter projeto para aprovação
+  
+### Fluxo principal: Após a criação do projeto, e todas as caracteristicas definidas, submeter o projeto para aprovação.
+  
+## CDU004
+  Gerenciar tarefas
+  
+### Fluxo principal: Após o usuário entrar no sistema, ele pode selecionar um dos projetos a ele atribuído. Após selecionar o projeto o sistema apresenta ao usuário as tarefas a ele atribuídas sobre o determinado projeto, podendo realizar inclusão ou exclusão de arquivos.
   
