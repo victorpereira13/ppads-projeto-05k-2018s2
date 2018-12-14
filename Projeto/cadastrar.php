@@ -42,7 +42,7 @@ if($btnCadUsuario){
 		//var_dump($dados);
 		$dados['senha'] = password_hash($dados['senha'], PASSWORD_DEFAULT);
 		
-		$result_usuario = "INSERT INTO usuarios (nome, email, usuario, senha) VALUES (
+		$result_usuario = "INSERT INTO usuarios (nome_usuario, email_usuario, apelido_usuario, senha_usuario) VALUES (
 						'" .$dados['nome']. "',
 						'" .$dados['email']. "',
 						'" .$dados['usuario']. "',
@@ -50,8 +50,8 @@ if($btnCadUsuario){
 						)";
 		$resultado_usario = mysqli_query($conn, $result_usuario);
 		if(mysqli_insert_id($conn)){
-			$_SESSION['msgcad'] = "Usuário cadastrado com sucesso";
-			header("Location: login.php");
+			$_SESSION['msgcad'] = "";
+			header("Location: index.php");
 		}else{
 			$_SESSION['msg'] = "Erro ao cadastrar o usuário";
 		}
@@ -96,7 +96,7 @@ if($btnCadUsuario){
 			
 			<input class="w3-btn w3-brown w3-round-xlarge" type="submit" name="btnCadUsuario" value="Cadastrar"><br><br>
 			
-			Lembrou? <a href="login.php">Clique aqui</a> para logar
+			Lembrou? <a href="index.php">Clique aqui</a> para logar
 		
 		</form>
         </div>
